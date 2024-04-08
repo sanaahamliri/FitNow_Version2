@@ -8,4 +8,14 @@ use Illuminate\Database\Eloquent\Model;
 class progress extends Model
 {
     use HasFactory;
+    protected $fillable = [
+        'weight',
+        'height',
+        'Arm_Circumference',
+        'Hip_Circumference',
+        'Waist_Circumference',
+        'status',
+        'userID'
+    ];
+
 }
